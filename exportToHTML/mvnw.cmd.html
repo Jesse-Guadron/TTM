@@ -1,0 +1,212 @@
+<html>
+<head>
+<title>mvnw.cmd</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #bcbec4;}
+.s1 { color: #cf8e6d;}
+.s2 { color: #7a7e85;}
+.s3 { color: #bcbec4;}
+.s4 { color: #6aab73;}
+.s5 { color: #2aacb8; font-style: italic;}
+.s6 { color: #cf8e6d; font-style: italic;}
+.ln { color: #4b5059; font-weight: normal; font-style: normal; }
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+mvnw.cmd</font>
+</center></td></tr></table>
+<pre><a name="l1"><span class="ln">1    </span></a><span class="s0">@</span><span class="s1">REM </span><span class="s2">---------------------------------------------------------------------------- 
+<a name="l2"><span class="ln">2    </span></a></span><span class="s0">@</span><span class="s1">REM </span><span class="s2">Licensed to the Apache Software Foundation (ASF) under one 
+<a name="l3"><span class="ln">3    </span></a></span><span class="s0">@</span><span class="s1">REM </span><span class="s2">or more contributor license agreements.  See the NOTICE file 
+<a name="l4"><span class="ln">4    </span></a></span><span class="s0">@</span><span class="s1">REM </span><span class="s2">distributed with this work for additional information 
+<a name="l5"><span class="ln">5    </span></a></span><span class="s0">@</span><span class="s1">REM </span><span class="s2">regarding copyright ownership.  The ASF licenses this file 
+<a name="l6"><span class="ln">6    </span></a></span><span class="s0">@</span><span class="s1">REM </span><span class="s2">to you under the Apache License, Version 2.0 (the 
+<a name="l7"><span class="ln">7    </span></a></span><span class="s0">@</span><span class="s1">REM </span><span class="s2">&quot;License&quot;); you may not use this file except in compliance 
+<a name="l8"><span class="ln">8    </span></a></span><span class="s0">@</span><span class="s1">REM </span><span class="s2">with the License.  You may obtain a copy of the License at 
+<a name="l9"><span class="ln">9    </span></a></span><span class="s0">@</span><span class="s1">REM</span>
+<a name="l10"><span class="ln">10   </span></a><span class="s0">@</span><span class="s1">REM    </span><span class="s2">https://www.apache.org/licenses/LICENSE-2.0 
+<a name="l11"><span class="ln">11   </span></a></span><span class="s0">@</span><span class="s1">REM</span>
+<a name="l12"><span class="ln">12   </span></a><span class="s0">@</span><span class="s1">REM </span><span class="s2">Unless required by applicable law or agreed to in writing, 
+<a name="l13"><span class="ln">13   </span></a></span><span class="s0">@</span><span class="s1">REM </span><span class="s2">software distributed under the License is distributed on an 
+<a name="l14"><span class="ln">14   </span></a></span><span class="s0">@</span><span class="s1">REM </span><span class="s2">&quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY 
+<a name="l15"><span class="ln">15   </span></a></span><span class="s0">@</span><span class="s1">REM </span><span class="s2">KIND, either express or implied.  See the License for the 
+<a name="l16"><span class="ln">16   </span></a></span><span class="s0">@</span><span class="s1">REM </span><span class="s2">specific language governing permissions and limitations 
+<a name="l17"><span class="ln">17   </span></a></span><span class="s0">@</span><span class="s1">REM </span><span class="s2">under the License. 
+<a name="l18"><span class="ln">18   </span></a></span><span class="s0">@</span><span class="s1">REM </span><span class="s2">---------------------------------------------------------------------------- 
+<a name="l19"><span class="ln">19   </span></a></span>
+<a name="l20"><span class="ln">20   </span></a><span class="s0">@</span><span class="s1">REM </span><span class="s2">---------------------------------------------------------------------------- 
+<a name="l21"><span class="ln">21   </span></a></span><span class="s0">@</span><span class="s1">REM </span><span class="s2">Maven Start Up Batch script 
+<a name="l22"><span class="ln">22   </span></a></span><span class="s0">@</span><span class="s1">REM</span>
+<a name="l23"><span class="ln">23   </span></a><span class="s0">@</span><span class="s1">REM </span><span class="s2">Required ENV vars: 
+<a name="l24"><span class="ln">24   </span></a></span><span class="s0">@</span><span class="s1">REM </span><span class="s2">JAVA_HOME - location of a JDK home dir 
+<a name="l25"><span class="ln">25   </span></a></span><span class="s0">@</span><span class="s1">REM</span>
+<a name="l26"><span class="ln">26   </span></a><span class="s0">@</span><span class="s1">REM </span><span class="s2">Optional ENV vars 
+<a name="l27"><span class="ln">27   </span></a></span><span class="s0">@</span><span class="s1">REM </span><span class="s2">M2_HOME - location of maven2's installed home dir 
+<a name="l28"><span class="ln">28   </span></a></span><span class="s0">@</span><span class="s1">REM </span><span class="s2">MAVEN_BATCH_ECHO - set to 'on' to enable the echoing of the batch commands 
+<a name="l29"><span class="ln">29   </span></a></span><span class="s0">@</span><span class="s1">REM </span><span class="s2">MAVEN_BATCH_PAUSE - set to 'on' to wait for a keystroke before ending 
+<a name="l30"><span class="ln">30   </span></a></span><span class="s0">@</span><span class="s1">REM </span><span class="s2">MAVEN_OPTS - parameters passed to the Java VM when running Maven 
+<a name="l31"><span class="ln">31   </span></a></span><span class="s0">@</span><span class="s1">REM     </span><span class="s2">e.g. to debug Maven itself, use 
+<a name="l32"><span class="ln">32   </span></a></span><span class="s0">@</span><span class="s1">REM </span><span class="s2">set MAVEN_OPTS=-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=8000 
+<a name="l33"><span class="ln">33   </span></a></span><span class="s0">@</span><span class="s1">REM </span><span class="s2">MAVEN_SKIP_RC - flag to disable loading of mavenrc files 
+<a name="l34"><span class="ln">34   </span></a></span><span class="s0">@</span><span class="s1">REM </span><span class="s2">---------------------------------------------------------------------------- 
+<a name="l35"><span class="ln">35   </span></a></span>
+<a name="l36"><span class="ln">36   </span></a><span class="s0">@</span><span class="s1">REM </span><span class="s2">Begin all REM lines with '@' in case MAVEN_BATCH_ECHO is 'on' 
+<a name="l37"><span class="ln">37   </span></a></span><span class="s0">@</span><span class="s1">echo off</span>
+<a name="l38"><span class="ln">38   </span></a><span class="s0">@</span><span class="s1">REM </span><span class="s2">set title of command window 
+<a name="l39"><span class="ln">39   </span></a></span><span class="s1">title </span><span class="s0">%0</span>
+<a name="l40"><span class="ln">40   </span></a><span class="s0">@</span><span class="s1">REM </span><span class="s2">enable echoing by setting MAVEN_BATCH_ECHO to 'on' 
+<a name="l41"><span class="ln">41   </span></a></span><span class="s0">@</span><span class="s3">if </span><span class="s0">&quot;%MAVEN_BATCH_ECHO%&quot; == &quot;</span><span class="s4">on</span><span class="s0">&quot;  </span><span class="s1">echo </span><span class="s0">%MAVEN_BATCH_ECHO%</span>
+<a name="l42"><span class="ln">42   </span></a>
+<a name="l43"><span class="ln">43   </span></a><span class="s0">@</span><span class="s1">REM </span><span class="s2">set %HOME% to equivalent of $HOME 
+<a name="l44"><span class="ln">44   </span></a></span><span class="s1">if </span><span class="s0">&quot;%HOME%&quot; == &quot;&quot; (</span><span class="s3">set </span><span class="s0">&quot;</span><span class="s4">HOME=</span><span class="s0">%HOMEDRIVE%%HOMEPATH%&quot;)</span>
+<a name="l45"><span class="ln">45   </span></a>
+<a name="l46"><span class="ln">46   </span></a><span class="s0">@</span><span class="s1">REM </span><span class="s2">Execute a user defined script before this one 
+<a name="l47"><span class="ln">47   </span></a></span><span class="s1">if </span><span class="s0">not &quot;%MAVEN_SKIP_RC%&quot; == &quot;&quot; </span><span class="s1">goto </span><span class="s3">skipRcPre 
+<a name="l48"><span class="ln">48   </span></a></span><span class="s0">@</span><span class="s1">REM </span><span class="s2">check for pre script, once with legacy .bat ending and once with .cmd ending 
+<a name="l49"><span class="ln">49   </span></a></span><span class="s1">if exist </span><span class="s0">&quot;%USERPROFILE%</span><span class="s4">\mavenrc_pre.bat</span><span class="s0">&quot; </span><span class="s1">call </span><span class="s0">&quot;%USERPROFILE%</span><span class="s4">\mavenrc_pre.bat</span><span class="s0">&quot; %*</span>
+<a name="l50"><span class="ln">50   </span></a><span class="s1">if exist </span><span class="s0">&quot;%USERPROFILE%</span><span class="s4">\mavenrc_pre.cmd</span><span class="s0">&quot; </span><span class="s1">call </span><span class="s0">&quot;%USERPROFILE%</span><span class="s4">\mavenrc_pre.cmd</span><span class="s0">&quot; %*</span>
+<a name="l51"><span class="ln">51   </span></a><span class="s0">:</span><span class="s1">skipRcPre</span>
+<a name="l52"><span class="ln">52   </span></a>
+<a name="l53"><span class="ln">53   </span></a><span class="s0">@</span><span class="s1">setlocal</span>
+<a name="l54"><span class="ln">54   </span></a>
+<a name="l55"><span class="ln">55   </span></a><span class="s1">set </span><span class="s0">ERROR_CODE=</span><span class="s5">0</span>
+<a name="l56"><span class="ln">56   </span></a>
+<a name="l57"><span class="ln">57   </span></a><span class="s0">@</span><span class="s1">REM </span><span class="s2">To isolate internal variables from possible post scripts, we use another setlocal 
+<a name="l58"><span class="ln">58   </span></a></span><span class="s0">@</span><span class="s1">setlocal</span>
+<a name="l59"><span class="ln">59   </span></a>
+<a name="l60"><span class="ln">60   </span></a><span class="s0">@</span><span class="s1">REM </span><span class="s2">==== START VALIDATION ==== 
+<a name="l61"><span class="ln">61   </span></a></span><span class="s1">if </span><span class="s0">not &quot;%JAVA_HOME%&quot; == &quot;&quot; </span><span class="s1">goto </span><span class="s3">OkJHome 
+<a name="l62"><span class="ln">62   </span></a></span>
+<a name="l63"><span class="ln">63   </span></a><span class="s1">echo</span><span class="s3">. 
+<a name="l64"><span class="ln">64   </span></a></span><span class="s1">echo </span><span class="s3">Error: JAVA_HOME not found in your environment. </span><span class="s0">&gt;&amp;</span><span class="s3">2 
+<a name="l65"><span class="ln">65   </span></a></span><span class="s1">echo </span><span class="s3">Please set the JAVA_HOME variable in your environment to match the </span><span class="s0">&gt;&amp;</span><span class="s3">2 
+<a name="l66"><span class="ln">66   </span></a></span><span class="s1">echo </span><span class="s3">location of your Java installation. </span><span class="s0">&gt;&amp;</span><span class="s3">2 
+<a name="l67"><span class="ln">67   </span></a></span><span class="s1">echo</span><span class="s3">. 
+<a name="l68"><span class="ln">68   </span></a></span><span class="s1">goto </span><span class="s3">error 
+<a name="l69"><span class="ln">69   </span></a></span>
+<a name="l70"><span class="ln">70   </span></a><span class="s0">:</span><span class="s1">OkJHome</span>
+<a name="l71"><span class="ln">71   </span></a><span class="s1">if exist </span><span class="s0">&quot;%JAVA_HOME%</span><span class="s4">\bin\java.exe</span><span class="s0">&quot; </span><span class="s1">goto </span><span class="s3">init 
+<a name="l72"><span class="ln">72   </span></a></span>
+<a name="l73"><span class="ln">73   </span></a><span class="s1">echo</span><span class="s3">. 
+<a name="l74"><span class="ln">74   </span></a></span><span class="s1">echo </span><span class="s3">Error: JAVA_HOME is set to an invalid directory. </span><span class="s0">&gt;&amp;</span><span class="s3">2 
+<a name="l75"><span class="ln">75   </span></a></span><span class="s1">echo </span><span class="s3">JAVA_HOME = </span><span class="s0">&quot;%JAVA_HOME%&quot; &gt;&amp;</span><span class="s3">2 
+<a name="l76"><span class="ln">76   </span></a></span><span class="s1">echo </span><span class="s3">Please set the JAVA_HOME variable in your environment to match the </span><span class="s0">&gt;&amp;</span><span class="s3">2 
+<a name="l77"><span class="ln">77   </span></a></span><span class="s1">echo </span><span class="s3">location of your Java installation. </span><span class="s0">&gt;&amp;</span><span class="s3">2 
+<a name="l78"><span class="ln">78   </span></a></span><span class="s1">echo</span><span class="s3">. 
+<a name="l79"><span class="ln">79   </span></a></span><span class="s1">goto </span><span class="s3">error 
+<a name="l80"><span class="ln">80   </span></a></span>
+<a name="l81"><span class="ln">81   </span></a><span class="s0">@</span><span class="s1">REM </span><span class="s2">==== END VALIDATION ==== 
+<a name="l82"><span class="ln">82   </span></a></span>
+<a name="l83"><span class="ln">83   </span></a><span class="s0">:</span><span class="s1">init</span>
+<a name="l84"><span class="ln">84   </span></a>
+<a name="l85"><span class="ln">85   </span></a><span class="s0">@</span><span class="s1">REM </span><span class="s2">Find the project base dir, i.e. the directory that contains the folder &quot;.mvn&quot;. 
+<a name="l86"><span class="ln">86   </span></a></span><span class="s0">@</span><span class="s1">REM </span><span class="s2">Fallback to current working directory if not found. 
+<a name="l87"><span class="ln">87   </span></a></span>
+<a name="l88"><span class="ln">88   </span></a><span class="s1">set </span><span class="s0">MAVEN_PROJECTBASEDIR=%MAVEN_BASEDIR%</span>
+<a name="l89"><span class="ln">89   </span></a><span class="s1">IF </span><span class="s0">NOT &quot;%MAVEN_PROJECTBASEDIR%&quot;==&quot;&quot; </span><span class="s1">goto </span><span class="s3">endDetectBaseDir 
+<a name="l90"><span class="ln">90   </span></a></span>
+<a name="l91"><span class="ln">91   </span></a><span class="s1">set </span><span class="s0">EXEC_DIR=%CD%</span>
+<a name="l92"><span class="ln">92   </span></a><span class="s1">set </span><span class="s0">WDIR=%EXEC_DIR%</span>
+<a name="l93"><span class="ln">93   </span></a><span class="s0">:</span><span class="s1">findBaseDir</span>
+<a name="l94"><span class="ln">94   </span></a><span class="s1">IF EXIST </span><span class="s0">&quot;%WDIR%&quot;</span><span class="s3">\.mvn </span><span class="s1">goto </span><span class="s3">baseDirFound 
+<a name="l95"><span class="ln">95   </span></a></span><span class="s1">cd </span><span class="s3">.. 
+<a name="l96"><span class="ln">96   </span></a></span><span class="s1">IF </span><span class="s0">&quot;%WDIR%&quot;==&quot;%CD%&quot; </span><span class="s1">goto </span><span class="s3">baseDirNotFound 
+<a name="l97"><span class="ln">97   </span></a></span><span class="s1">set </span><span class="s0">WDIR=%CD%</span>
+<a name="l98"><span class="ln">98   </span></a><span class="s1">goto </span><span class="s3">findBaseDir 
+<a name="l99"><span class="ln">99   </span></a></span>
+<a name="l100"><span class="ln">100  </span></a><span class="s0">:</span><span class="s1">baseDirFound</span>
+<a name="l101"><span class="ln">101  </span></a><span class="s1">set </span><span class="s0">MAVEN_PROJECTBASEDIR=%WDIR%</span>
+<a name="l102"><span class="ln">102  </span></a><span class="s1">cd </span><span class="s0">&quot;%EXEC_DIR%&quot;</span>
+<a name="l103"><span class="ln">103  </span></a><span class="s1">goto </span><span class="s3">endDetectBaseDir 
+<a name="l104"><span class="ln">104  </span></a></span>
+<a name="l105"><span class="ln">105  </span></a><span class="s0">:</span><span class="s1">baseDirNotFound</span>
+<a name="l106"><span class="ln">106  </span></a><span class="s1">set </span><span class="s0">MAVEN_PROJECTBASEDIR=%EXEC_DIR%</span>
+<a name="l107"><span class="ln">107  </span></a><span class="s1">cd </span><span class="s0">&quot;%EXEC_DIR%&quot;</span>
+<a name="l108"><span class="ln">108  </span></a>
+<a name="l109"><span class="ln">109  </span></a><span class="s0">:</span><span class="s1">endDetectBaseDir</span>
+<a name="l110"><span class="ln">110  </span></a>
+<a name="l111"><span class="ln">111  </span></a><span class="s1">IF </span><span class="s0">NOT </span><span class="s1">EXIST </span><span class="s0">&quot;%MAVEN_PROJECTBASEDIR%</span><span class="s4">\.mvn\jvm.config</span><span class="s0">&quot; </span><span class="s1">goto </span><span class="s3">endReadAdditionalConfig 
+<a name="l112"><span class="ln">112  </span></a></span>
+<a name="l113"><span class="ln">113  </span></a><span class="s0">@</span><span class="s3">setlocal EnableExtensions EnableDelayedExpansion 
+<a name="l114"><span class="ln">114  </span></a></span><span class="s1">for </span><span class="s3">/F </span><span class="s0">&quot;</span><span class="s4">usebackq delims=</span><span class="s0">&quot; %%a </span><span class="s1">in </span><span class="s0">(&quot;%MAVEN_PROJECTBASEDIR%</span><span class="s4">\.mvn\jvm.config</span><span class="s0">&quot;) </span><span class="s1">do set </span><span class="s0">JVM_CONFIG_MAVEN_PROPS=!JVM_CONFIG_MAVEN_PROPS! </span><span class="s6">%%</span><span class="s3">a 
+<a name="l115"><span class="ln">115  </span></a></span><span class="s0">@</span><span class="s1">endlocal </span><span class="s0">&amp; </span><span class="s1">set </span><span class="s0">JVM_CONFIG_MAVEN_PROPS=%JVM_CONFIG_MAVEN_PROPS%</span>
+<a name="l116"><span class="ln">116  </span></a>
+<a name="l117"><span class="ln">117  </span></a><span class="s0">:</span><span class="s1">endReadAdditionalConfig</span>
+<a name="l118"><span class="ln">118  </span></a>
+<a name="l119"><span class="ln">119  </span></a><span class="s1">SET </span><span class="s0">MAVEN_JAVA_EXE=&quot;%JAVA_HOME%</span><span class="s4">\bin\java.exe</span><span class="s0">&quot;</span>
+<a name="l120"><span class="ln">120  </span></a><span class="s1">set </span><span class="s0">WRAPPER_JAR=&quot;%MAVEN_PROJECTBASEDIR%</span><span class="s4">\.mvn\wrapper\maven-wrapper.jar</span><span class="s0">&quot;</span>
+<a name="l121"><span class="ln">121  </span></a><span class="s1">set </span><span class="s0">WRAPPER_LAUNCHER=</span><span class="s3">org.apache.maven.wrapper.MavenWrapperMain 
+<a name="l122"><span class="ln">122  </span></a></span>
+<a name="l123"><span class="ln">123  </span></a><span class="s1">set </span><span class="s0">DOWNLOAD_URL=&quot;</span><span class="s4">https://repo.maven.apache.org/maven2/org/apache/maven/wrapper/maven-wrapper/3.1.0/maven-wrapper-3.1.0.jar</span><span class="s0">&quot;</span>
+<a name="l124"><span class="ln">124  </span></a>
+<a name="l125"><span class="ln">125  </span></a><span class="s1">FOR </span><span class="s3">/F </span><span class="s0">&quot;</span><span class="s4">usebackq tokens=1,2 delims==</span><span class="s0">&quot; %%A </span><span class="s1">IN </span><span class="s0">(&quot;%MAVEN_PROJECTBASEDIR%</span><span class="s4">\.mvn\wrapper\maven-wrapper.properties</span><span class="s0">&quot;) </span><span class="s1">DO </span><span class="s0">(</span>
+<a name="l126"><span class="ln">126  </span></a>    <span class="s1">IF </span><span class="s0">&quot;</span><span class="s6">%%</span><span class="s4">A</span><span class="s0">&quot;==&quot;</span><span class="s4">wrapperUrl</span><span class="s0">&quot; </span><span class="s1">SET </span><span class="s0">DOWNLOAD_URL=</span><span class="s6">%%</span><span class="s3">B 
+<a name="l127"><span class="ln">127  </span></a></span><span class="s0">)</span>
+<a name="l128"><span class="ln">128  </span></a>
+<a name="l129"><span class="ln">129  </span></a><span class="s0">@</span><span class="s1">REM </span><span class="s2">Extension to allow automatically downloading the maven-wrapper.jar from Maven-central 
+<a name="l130"><span class="ln">130  </span></a></span><span class="s0">@</span><span class="s1">REM </span><span class="s2">This allows using the maven wrapper in projects that prohibit checking in binary data. 
+<a name="l131"><span class="ln">131  </span></a></span><span class="s1">if exist </span><span class="s0">%WRAPPER_JAR% (</span>
+<a name="l132"><span class="ln">132  </span></a>    <span class="s1">if </span><span class="s0">&quot;%MVNW_VERBOSE%&quot; == &quot;</span><span class="s4">true</span><span class="s0">&quot; (</span>
+<a name="l133"><span class="ln">133  </span></a>        <span class="s1">echo </span><span class="s3">Found </span><span class="s0">%WRAPPER_JAR%</span>
+<a name="l134"><span class="ln">134  </span></a>    <span class="s0">)</span>
+<a name="l135"><span class="ln">135  </span></a><span class="s0">) </span><span class="s1">else </span><span class="s0">(</span>
+<a name="l136"><span class="ln">136  </span></a>    <span class="s1">if </span><span class="s0">not &quot;%MVNW_REPOURL%&quot; == &quot;&quot; (</span>
+<a name="l137"><span class="ln">137  </span></a>        <span class="s1">SET </span><span class="s0">DOWNLOAD_URL=&quot;%MVNW_REPOURL%</span><span class="s4">/org/apache/maven/wrapper/maven-wrapper/3.1.0/maven-wrapper-3.1.0.jar</span><span class="s0">&quot;</span>
+<a name="l138"><span class="ln">138  </span></a>    <span class="s0">)</span>
+<a name="l139"><span class="ln">139  </span></a>    <span class="s1">if </span><span class="s0">&quot;%MVNW_VERBOSE%&quot; == &quot;</span><span class="s4">true</span><span class="s0">&quot; (</span>
+<a name="l140"><span class="ln">140  </span></a>        <span class="s1">echo </span><span class="s3">Couldn't find </span><span class="s0">%WRAPPER_JAR%</span><span class="s3">, downloading it ... 
+<a name="l141"><span class="ln">141  </span></a>        </span><span class="s1">echo </span><span class="s3">Downloading from: </span><span class="s0">%DOWNLOAD_URL%</span>
+<a name="l142"><span class="ln">142  </span></a>    <span class="s0">)</span>
+<a name="l143"><span class="ln">143  </span></a>
+<a name="l144"><span class="ln">144  </span></a>    <span class="s1">powershell </span><span class="s3">-Command </span><span class="s0">&quot;</span><span class="s4">&amp;{</span><span class="s0">&quot;</span><span class="s6">^ 
+<a name="l145"><span class="ln">145  </span></a>		</span><span class="s0">&quot;</span><span class="s4">$webclient = new-object System.Net.WebClient;</span><span class="s0">&quot;</span><span class="s6">^ 
+<a name="l146"><span class="ln">146  </span></a>		</span><span class="s0">&quot;</span><span class="s4">if (-not ([string]::IsNullOrEmpty('</span><span class="s0">%MVNW_USERNAME%</span><span class="s4">') -and [string]::IsNullOrEmpty('</span><span class="s0">%MVNW_PASSWORD%</span><span class="s4">'))) {</span><span class="s0">&quot;</span><span class="s6">^ 
+<a name="l147"><span class="ln">147  </span></a>		</span><span class="s0">&quot;</span><span class="s4">$webclient.Credentials = new-object System.Net.NetworkCredential('</span><span class="s0">%MVNW_USERNAME%</span><span class="s4">', '</span><span class="s0">%MVNW_PASSWORD%</span><span class="s4">');</span><span class="s0">&quot;</span><span class="s6">^ 
+<a name="l148"><span class="ln">148  </span></a>		</span><span class="s0">&quot;</span><span class="s4">}</span><span class="s0">&quot;</span><span class="s6">^ 
+<a name="l149"><span class="ln">149  </span></a>		</span><span class="s0">&quot;</span><span class="s4">[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; $webclient.DownloadFile('</span><span class="s0">%DOWNLOAD_URL%</span><span class="s4">', '</span><span class="s0">%WRAPPER_JAR%</span><span class="s4">')</span><span class="s0">&quot;</span><span class="s6">^ 
+<a name="l150"><span class="ln">150  </span></a>		</span><span class="s0">&quot;</span><span class="s4">}</span><span class="s0">&quot;</span>
+<a name="l151"><span class="ln">151  </span></a>    <span class="s1">if </span><span class="s0">&quot;%MVNW_VERBOSE%&quot; == &quot;</span><span class="s4">true</span><span class="s0">&quot; (</span>
+<a name="l152"><span class="ln">152  </span></a>        <span class="s1">echo </span><span class="s3">Finished downloading </span><span class="s0">%WRAPPER_JAR%</span>
+<a name="l153"><span class="ln">153  </span></a>    <span class="s0">)</span>
+<a name="l154"><span class="ln">154  </span></a><span class="s0">)</span>
+<a name="l155"><span class="ln">155  </span></a><span class="s0">@</span><span class="s1">REM </span><span class="s2">End of extension 
+<a name="l156"><span class="ln">156  </span></a></span>
+<a name="l157"><span class="ln">157  </span></a><span class="s0">@</span><span class="s1">REM </span><span class="s2">Provide a &quot;standardized&quot; way to retrieve the CLI args that will 
+<a name="l158"><span class="ln">158  </span></a></span><span class="s0">@</span><span class="s1">REM </span><span class="s2">work with both Windows and non-Windows executions. 
+<a name="l159"><span class="ln">159  </span></a></span><span class="s1">set </span><span class="s0">MAVEN_CMD_LINE_ARGS=%*</span>
+<a name="l160"><span class="ln">160  </span></a>
+<a name="l161"><span class="ln">161  </span></a><span class="s0">%MAVEN_JAVA_EXE% </span><span class="s6">^ 
+<a name="l162"><span class="ln">162  </span></a>  </span><span class="s0">%JVM_CONFIG_MAVEN_PROPS% </span><span class="s6">^ 
+<a name="l163"><span class="ln">163  </span></a>  </span><span class="s0">%MAVEN_OPTS% </span><span class="s6">^ 
+<a name="l164"><span class="ln">164  </span></a>  </span><span class="s0">%MAVEN_DEBUG_OPTS% </span><span class="s6">^ 
+<a name="l165"><span class="ln">165  </span></a>  </span><span class="s3">-classpath </span><span class="s0">%WRAPPER_JAR% </span><span class="s6">^ 
+<a name="l166"><span class="ln">166  </span></a>  </span><span class="s0">&quot;</span><span class="s4">-Dmaven.multiModuleProjectDirectory=</span><span class="s0">%MAVEN_PROJECTBASEDIR%&quot; </span><span class="s6">^ 
+<a name="l167"><span class="ln">167  </span></a>  </span><span class="s0">%WRAPPER_LAUNCHER% %MAVEN_CONFIG% %*</span>
+<a name="l168"><span class="ln">168  </span></a><span class="s1">if ERRORLEVEL </span><span class="s5">1 </span><span class="s1">goto </span><span class="s3">error 
+<a name="l169"><span class="ln">169  </span></a></span><span class="s1">goto </span><span class="s3">end 
+<a name="l170"><span class="ln">170  </span></a></span>
+<a name="l171"><span class="ln">171  </span></a><span class="s0">:</span><span class="s1">error</span>
+<a name="l172"><span class="ln">172  </span></a><span class="s1">set </span><span class="s0">ERROR_CODE=</span><span class="s5">1</span>
+<a name="l173"><span class="ln">173  </span></a>
+<a name="l174"><span class="ln">174  </span></a><span class="s0">:</span><span class="s1">end</span>
+<a name="l175"><span class="ln">175  </span></a><span class="s0">@</span><span class="s1">endlocal </span><span class="s0">&amp; </span><span class="s1">set </span><span class="s0">ERROR_CODE=%ERROR_CODE%</span>
+<a name="l176"><span class="ln">176  </span></a>
+<a name="l177"><span class="ln">177  </span></a><span class="s1">if </span><span class="s0">not &quot;%MAVEN_SKIP_RC%&quot;==&quot;&quot; </span><span class="s1">goto </span><span class="s3">skipRcPost 
+<a name="l178"><span class="ln">178  </span></a></span><span class="s0">@</span><span class="s1">REM </span><span class="s2">check for post script, once with legacy .bat ending and once with .cmd ending 
+<a name="l179"><span class="ln">179  </span></a></span><span class="s1">if exist </span><span class="s0">&quot;%USERPROFILE%</span><span class="s4">\mavenrc_post.bat</span><span class="s0">&quot; </span><span class="s1">call </span><span class="s0">&quot;%USERPROFILE%</span><span class="s4">\mavenrc_post.bat</span><span class="s0">&quot;</span>
+<a name="l180"><span class="ln">180  </span></a><span class="s1">if exist </span><span class="s0">&quot;%USERPROFILE%</span><span class="s4">\mavenrc_post.cmd</span><span class="s0">&quot; </span><span class="s1">call </span><span class="s0">&quot;%USERPROFILE%</span><span class="s4">\mavenrc_post.cmd</span><span class="s0">&quot;</span>
+<a name="l181"><span class="ln">181  </span></a><span class="s0">:</span><span class="s1">skipRcPost</span>
+<a name="l182"><span class="ln">182  </span></a>
+<a name="l183"><span class="ln">183  </span></a><span class="s0">@</span><span class="s1">REM </span><span class="s2">pause the script if MAVEN_BATCH_PAUSE is set to 'on' 
+<a name="l184"><span class="ln">184  </span></a></span><span class="s1">if </span><span class="s0">&quot;%MAVEN_BATCH_PAUSE%&quot;==&quot;</span><span class="s4">on</span><span class="s0">&quot; </span><span class="s1">pause</span>
+<a name="l185"><span class="ln">185  </span></a>
+<a name="l186"><span class="ln">186  </span></a><span class="s1">if </span><span class="s0">&quot;%MAVEN_TERMINATE_CMD%&quot;==&quot;</span><span class="s4">on</span><span class="s0">&quot; </span><span class="s1">exit </span><span class="s0">%ERROR_CODE%</span>
+<a name="l187"><span class="ln">187  </span></a>
+<a name="l188"><span class="ln">188  </span></a><span class="s1">cmd </span><span class="s3">/C </span><span class="s1">exit </span><span class="s3">/B </span><span class="s0">%ERROR_CODE%</span>
+<a name="l189"><span class="ln">189  </span></a></pre>
+</body>
+</html>
